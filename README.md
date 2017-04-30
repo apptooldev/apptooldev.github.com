@@ -1,2 +1,1 @@
-# apptooldev.github.com
-BLOG
+EXAMPLE
