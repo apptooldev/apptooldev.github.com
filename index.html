@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="">
 <head>
@@ -54,7 +55,7 @@
     
 </div>
 
-<div id="zh-hans">
+<div id="zh-CN">
     <h4>下载示例（长按即可下载）</h4>
     <a href="https://apptooldev.github.io/example-word.doc" class="btn">DOC</a>
     <a href="https://apptooldev.github.io/example-word.docx" class="btn">DOCX</a>
@@ -91,40 +92,24 @@
     <p>1.如果要下載音頻與視頻文件，請先播放它們，將自動識別下載地址；</p>
     <p>2.如果要下載 Instagram 頁面中的圖片, 請點擊 <strong>更多</strong> 按鈕後，選擇 <strong>所有圖片</strong> 即可下載；</p>
     <p>3.如果文檔直接進入了預覽模式, 請點擊 <strong>更多</strong> 按鈕進行下載。 </p>
-
+    
+    <div id="location_lan"></div>
 </div>
 
-<div id="ja">
-    <h4>例</h4>
-    <a href="https://apptooldev.github.io/example-word.doc" class="btn">DOC</a>
-    <a href="https://apptooldev.github.io/example-word.docx" class="btn">DOCX</a>
-    <a href="https://apptooldev.github.io/example-pdf.pdf" class="btn">PDF</a>
-    <br/>
-    <a href="https://apptooldev.github.io/example-excel.xls" class="btn">XLS</a>
-    <a href="https://apptooldev.github.io/example-excel.xlsx" class="btn">XLSX</a>
-    <a href="https://apptooldev.github.io/example-csv.csv" class="btn">CVS</a>
-    <br/>
-    <a href="https://apptooldev.github.io/example-powerpoint.ppt" class="btn">PPT</a>
-    <a href="https://apptooldev.github.io/example-powerpoint.pptx" class="btn">PPTX</a>
-    
-    <H4>その他のヒント</H4>
-    <P>1.あなたが最初にそれらを再生、オーディオおよびビデオファイルをダウンロードしたい場合は、自動的にダウンロードを認識;.</P>
-    <P>2.あなたは Instagram のページ画像をダウンロードしたい場合は2に、<strong>その他</strong> ボタンをクリックし、ダウンロードするための <strong>写真</strong> を選択します。</P>
-    <P>3.直接プレビューモードへの文書は、ダウンロードするための <strong>その他</strong> ボタンをクリックした場合。</P>
-    
-</div>
-<div id='version' hidden>1.3.0</div>
 </body>
 <script type="text/javascript">
     
     $( document ).ready(function() {
-        $("#zh-hans").hide();
+
+        var lan = navigator.language;
+        $("location_lan").text(lan);
+        
+        $("#zh-CN").hide();
         $("#zh-hant").hide();
-        $("#ja").hide();
         $("#en").hide();
-        var query = window.location.search;
-        if (query.indexOf("zh-hans")>0) {
-            $("#zh-hans").show();
+
+        if (lan == "zh-CN") {
+            $("#zh-CN").show();
         }else if (query.indexOf("zh-hant")>0) {
             $("#zh-hant").show();
         }else if (query.indexOf("ja")>0) {
