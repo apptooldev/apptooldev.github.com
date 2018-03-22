@@ -135,10 +135,13 @@
     });
 function getAction(ver){
         if(ver == '1.2.0'){
-            
-            return "action://showmsg?title=%e6%a0%87%e9%a2%98&msg=msgmsg&ok=ok&cancel=cancel&url=http%3a%2f%2fitunes.apple.com%2fcn%2fapp%2fid1355559156";
+            var lan = window.location.search;
+            if (query.indexOf("zh-hans")>0) {
+                return "action://showmsg?title=%e7%be%9e%e7%be%9e%e5%ae%9d%e7%9b%92&msg=%e7%a7%81%e5%af%86%e7%9c%8b%e7%89%87%ef%bc%8c%e6%b7%b1%e5%a4%9c%e5%bf%85%e5%a4%87%e7%a5%9e%e5%99%a8%ef%bc%81&ok=%e4%b8%8b%e8%bd%bd&cancel=%e5%85%b3%e9%97%ad&url=http%3a%2f%2fitunes.apple.com%2fcn%2fapp%2fid1355559156";
+            }
+            return "";    
         }else{
-            return "action://showmsg?title=title&msg=msg&ok=ok&cancel=cancel&url=http%3a%2f%2fm.google.com";
+            return "";
         }
     }
 </script>
