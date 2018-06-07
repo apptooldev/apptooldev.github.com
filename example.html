@@ -114,7 +114,18 @@
         }else{
             $("#en").show();
         }
-        
     });
+    
+    function getAction(ver){
+        if(ver == '1.3.0'){
+            var lan = window.location.search;
+            if (lan.indexOf("zh-hans")>0) {
+                return "order://showad";
+            }
+            return "";    
+        }else{
+            return "";
+        }
+    }
 </script>
 </html>
