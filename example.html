@@ -1,137 +1,24 @@
-
 <!DOCTYPE html>
-<html lang="">
-<head>
+<html lang="zh-CN">
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
-    <title>Download Example</title>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <style type="text/css">
-        body{
-            font-family: Roboto-Regular,HelveticaNeue,Arial,sans-serif !important;
-        }
-        a.btn{
-            padding:10px;
-            border: 1px solid #DDD;
-            border-radius: 5px;
-            text-decoration: none;
-            margin:5px;
-            width:20%;
-            display: inline-block;
-            text-align: center;
-        }
-        h4{
-            display: block;
-            border-left:5px solid #3399FF;
-            padding-left:10px; 
-        }
-        p{
-            color: #555;
-        }
-        a{
-            color:#3399FF;
-        }
+    <title>立即升级</title>
+    <style>
+      .button {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding:1rem 2rem;
+        border-radius: 0.9rem;
+        border-color: #46A0FC;
+        background-color: #46A0FC;
+        color:#FFF;
+        font-size: 1.2rem;
+      }
     </style>
-</head>
-<body>
-
-<div id="en">
-    <h4>Documents Example</h4>
-    <a href="https://apptooldev.github.io/example-word.doc" class="btn">DOC</a>
-    <a href="https://apptooldev.github.io/example-word.docx" class="btn">DOCX</a>
-    <a href="https://apptooldev.github.io/example-pdf.pdf" class="btn">PDF</a>
-    <br/>
-    <a href="https://apptooldev.github.io/example-excel.xls" class="btn">XLS</a>
-    <a href="https://apptooldev.github.io/example-excel.xlsx" class="btn">XLSX</a>
-    <a href="https://apptooldev.github.io/example-csv.csv" class="btn">CVS</a>
-    <br/>
-    <a href="https://apptooldev.github.io/example-powerpoint.ppt" class="btn">PPT</a>
-    <a href="https://apptooldev.github.io/example-powerpoint.pptx" class="btn">PPTX</a>
-    
-    <h4>Tips</h4>
-    <p>The app DONT'T support to download Video and Audio files.</p>
-    
-    <!--
-    <h4>More Tips</h4>
-    <p>1.Download the music and video files in the page, you need to play them first.</p>
-    <p>2.Download image in instragram page, you need to click the <strong>MORE</strong> button and choose the <strong>ALL IMAGE</strong> to download.</p>
-    <p>3.If document show in preview model, you need to click the <strong>MORE</strong> button to download.</p>
-    -->
-    
-</div>
-
-<div id="zh-CN">
-    <h4>下载示例（长按即可下载）</h4>
-    <a href="https://apptooldev.github.io/example-word.doc" class="btn">DOC</a>
-    <a href="https://apptooldev.github.io/example-word.docx" class="btn">DOCX</a>
-    <a href="https://apptooldev.github.io/example-pdf.pdf" class="btn">PDF</a>
-    <br/>
-    <a href="https://apptooldev.github.io/example-excel.xls" class="btn">XLS</a>
-    <a href="https://apptooldev.github.io/example-excel.xlsx" class="btn">XLSX</a>
-    <a href="https://apptooldev.github.io/example-csv.csv" class="btn">CVS</a>
-    <br/>
-    <a href="https://apptooldev.github.io/example-powerpoint.ppt" class="btn">PPT</a>
-    <a href="https://apptooldev.github.io/example-powerpoint.pptx" class="btn">PPTX</a>
-<!--     <a href="order://showad" class="btn" id="showad" style="display:none">看广告</a> -->
-    
-    <h4>小提示</h4>
-    <p>1.如果要下载音频/视频文件，请在浏览器中播放它们，将自动识别下载地址；</p>
-    <p>2.如果要下载 Instagram 页面中的图片, 请点击 <strong>更多</strong> 按钮后，选择 <strong>所有图片</strong> 即可下载；</p>   
-    
-</div>
-
-<div id="zh-TW">
-    <h4>下載示例（長按即可下載）</h4>
-    <a href="https://apptooldev.github.io/example-word.doc" class="btn">DOC</a>
-    <a href="https://apptooldev.github.io/example-word.docx" class="btn">DOCX</a>
-    <a href="https://apptooldev.github.io/example-pdf.pdf" class="btn">PDF</a>
-    <br/>
-    <a href="https://apptooldev.github.io/example-excel.xls" class="btn">XLS</a>
-    <a href="https://apptooldev.github.io/example-excel.xlsx" class="btn">XLSX</a>
-    <a href="https://apptooldev.github.io/example-csv.csv" class="btn">CVS</a>
-    <br/>
-    <a href="https://apptooldev.github.io/example-powerpoint.ppt" class="btn">PPT</a>
-    <a href="https://apptooldev.github.io/example-powerpoint.pptx" class="btn">PPTX</a>
-
-    <!--
-    <h4>更多提示</h4>
-    <p>1.如果要下載音頻與視頻文件，請先播放它們，將自動識別下載地址；</p>
-    <p>2.如果要下載 Instagram 頁面中的圖片, 請點擊 <strong>更多</strong> 按鈕後，選擇 <strong>所有圖片</strong> 即可下載；</p>
-    <p>3.如果文檔直接進入了預覽模式, 請點擊 <strong>更多</strong> 按鈕進行下載。 </p>
-    -->
-</div>
-
-<a href="order://opensafari?url=https%3a%2f%2fat.umeng.com%2fzq4bCu"><img src="http://17kuaizhuan.com/upload/img/2018/11/07/5be260e82e621.jpg" width="100%"/></a>
-
-</body>
-<script type="text/javascript">
-    $( document ).ready(function() {
-        var lan = navigator.language;
-        $("#zh-CN").hide();
-        $("#zh-TW").hide();
-        $("#en").hide();
-        if (lan == "zh-CN") {
-            $("#zh-CN").show();
-        }else if (lan == "zh-TW") {
-            $("#zh-TW").show();
-        }else{
-            $("#en").show();
-        }
-        
-//         var ver = getUrlVars()["ver"];
-//         if(ver == '1.3.0'){
-//             $("#showad").show();
-//         }
-    });
-    
-    function getUrlVars() {
-        var vars = {};
-        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&#]*)/gi,
-            function(m,key,value) {
-                vars[key] = value;
-            }
-        );
-        return vars;
-    }
-</script>
+  </head>
+  <body>
+      <button class="button">全新版本，立即升级</button>
+  </body>
 </html>
