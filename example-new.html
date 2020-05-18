@@ -59,7 +59,7 @@
     
 </div>
 
-<div id="zh-CN">
+<div id="zh-cn">
     <h4>下载示例（长按即可下载）</h4>
     <a href="https://apptooldev.github.io/example-word.doc" class="btn">DOC</a>
     <a href="https://apptooldev.github.io/example-word.docx" class="btn">DOCX</a>
@@ -81,7 +81,7 @@
 
 </div>
 
-<div id="zh-TW">
+<div id="zh-tw">
     <h4>下載示例（長按即可下載）</h4>
     <a href="https://apptooldev.github.io/example-word.doc" class="btn">DOC</a>
     <a href="https://apptooldev.github.io/example-word.docx" class="btn">DOCX</a>
@@ -106,16 +106,16 @@
 </body>
 <script type="text/javascript">
     $( document ).ready(function() {
-        var lan = navigator.language;
-        $("#zh-CN").hide();
-        $("#zh-TW").hide();
+        var lan = navigator.language.toLowerCase();
+        $("#zh-cn").hide();
+        $("#zh-tw").hide();
         $("#en").hide();
-        if (lan == "zh-CN") {
-            $("#zh-CN").show();
-        }else if (lan == "zh-Hans-CN") {
-            $("#zh-CN").show();
-        }else if (lan == "zh-TW") {
-            $("#zh-TW").show();
+        if (lan == "zh-cn") {
+            $("#zh-cn").show();
+        }else if (lan == "zh-hans-cn") {
+            $("#zh-cn").show();
+        }else if (lan == "zh-tw") {
+            $("#zh-tw").show();
         }else{
             $("#en").show();
         }
